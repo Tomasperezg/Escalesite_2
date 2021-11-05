@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-herobanner',
@@ -7,12 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HerobannerComponent implements OnInit {
 
+  @Input() maintText = '';
+  @Input() subText = '';
+  @Input() heroTextContainerClass = '';
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  heroTextMain = "This is a test";
-  heroTextSub = "Test for sub section";
+
 
 }

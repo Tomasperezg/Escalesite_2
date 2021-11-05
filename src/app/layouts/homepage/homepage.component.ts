@@ -12,4 +12,8 @@ export class HomepageComponent implements OnInit {
   ngOnInit() {
   }
 
+  currentMainText = "This is a Test";
+  currentSubText = "This is a text for sub Text";
+  currentheroTextContainerClass = "heroTextContainerHome";
+
 }
