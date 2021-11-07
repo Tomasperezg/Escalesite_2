@@ -12,7 +12,8 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
-  currentMainText = "This is a test for Contact";
-  currentSubText = "This is a text for sub Text Contact";
+  currentMainText = "Let Us Be Part of Your Journey!";
+  currentSubText = "Send us a message with an overview of your project and we will reply as soon as possible.";
   currentheroTextContainerClass = "heroTextContainerContact";
+  heroImageUrl = "assets/gallery/Escalesite_Hero_ContactPage.png";
 }

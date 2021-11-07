@@ -1,3 +1,5 @@
+@import "src/styles";
+
 #heroBanner{
     width: 100%;
     height: 450px;
@@ -7,16 +9,39 @@
     .heroImage{
         width: 45%;
         height: 450px;
-        border: 2px #2c2c2c solid;
+        img{
+            width: 100%;
+            height: 450px;
+        }
+    }
+    .heroTextContainer{
+        width: 45%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .heroText{
+            text-align: left;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        h1{
+            font-family: $font-number-2;
+            font-weight: $font-number-2-strong;
+        }
+        h4{
+            margin: 0;
+            font-family: $font-number-2;
+            font-weight: $font-number-2-light;
+        }
     }
     .heroTextContainerHome{
-        width: 45%;
-        height: 450px;
-        background-color: aqua;
+        background-color:#272361;
+        color: white;
     }
     .heroTextContainerContact{
-        width: 45%;
-        height: 450px;
-        background-color: green;
+        background-color: #8AD0D4;
+        color: white;
     }
 }

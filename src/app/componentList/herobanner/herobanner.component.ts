@@ -10,6 +10,7 @@ export class HerobannerComponent implements OnInit {
   @Input() maintText = '';
   @Input() subText = '';
   @Input() heroTextContainerClass = '';
+  @Input() heroImage = '';
 
   constructor() { }
 
