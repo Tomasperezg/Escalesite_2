@@ -37,12 +37,12 @@
                 transition: 0.25s linear;
               /*   will-change: transform; */
             }
-            a:hover:before {
+            a:hover:before{
                 transform: scale(1);
               }
            
-            .active-link{
-               color: $link-font-color;
+            a.active-link{
+                border-bottom: 1px solid $primary-font-color;
             }
         }
        

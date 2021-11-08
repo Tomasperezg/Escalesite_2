@@ -7,6 +7,18 @@ $link-font-color: #67B8DE;
 
 
 body{
-    max-width: 1300px;
+    max-width: 1100px;
     margin: 0 auto !important;
+}
+// Tablet
+@media screen and (min-width: 768px) and (max-width: 1080px){
+    body{
+        max-width: 100%;
+    }
+}
+// Mobil
+@media screen and (max-width: 767px){
+    body{
+        max-width: 100%;
+    }
 }

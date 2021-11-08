@@ -45,3 +45,38 @@
         color: white;
     }
 }
+
+// Tablet
+@media screen and (min-width: 768px) and (max-width: 1080px){
+    #heroBanner{
+        .heroImage{
+            width: 100%;
+        }
+        .heroTextContainer{
+            width: 100%;
+            h1{
+                font-size: 30px;
+            }
+            h4{
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+
+// Mobil
+@media screen and (max-width: 767px){
+    #heroBanner{
+        flex-direction: column;
+        height: 100%;
+        margin-top: 40px;
+        .heroImage{
+            width: 100%;
+        }
+        .heroTextContainer{
+            width: 100%;
+            height: 300px;
+        }    
+    }
+}
