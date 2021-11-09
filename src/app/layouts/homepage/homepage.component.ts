@@ -17,4 +17,7 @@ export class HomepageComponent implements OnInit {
   currentheroTextContainerClass = "heroTextContainerHome";
   heroImageUrl = "assets/gallery/Escalesite_Hero_HomePage.png";
 
+  mainText = "EscaleSite is a small web and design agency located in the Grand Rapids Michigan area." + 
+  "Using the best digital tools and technologies to help people and organizations to find success. ";
+
 }

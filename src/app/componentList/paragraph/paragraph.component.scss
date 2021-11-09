@@ -1,0 +1,13 @@
+@import "src/styles";
+
+#paragraphContainer{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    p{
+        width: 80%;
+        color: $primary-font-color;
+        font-family: $font-number-2;
+        font-weight: $font-number-2-light;
+    }
+}
