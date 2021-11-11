@@ -1,0 +1,27 @@
+@import "src/styles";
+
+#buttonContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    button{
+        font-size: $font-size-small;
+        font-family: $font-number-2;
+        font-weight: $font-number-2-light;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: white;
+        border: 1px solid $primary-font-color;
+        box-shadow: 2px 2px 2px #aaaaaa;
+    }
+    button:hover{
+        background-color: $primary-font-color;
+        color: white;
+        cursor: pointer;
+        transform: translatey(-1px);
+        transition: 0.5s;
+        
+    }
+}

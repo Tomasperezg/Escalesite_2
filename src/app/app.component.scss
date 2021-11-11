@@ -3,7 +3,9 @@
 #GlobalNav{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px #2c2c2c solid;
+    -webkit-box-shadow: 0 8px 6px -6px #0000005e;
+	   -moz-box-shadow: 0 8px 6px -6px #0000005e;
+	        box-shadow: 0 8px 6px -6px #0000005e;
     .NavLogo{
         color: $primary-font-color;
         padding-left: 20px;
