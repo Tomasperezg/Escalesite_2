@@ -13,6 +13,24 @@
 
 <!-- End Global Navigation-->
 
+<!-- Globak Navigation Mobil -->
+<div id="GlobalNavMobil">
+    <div  (click)="changeState()" class="NavBurgerIconMobil">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <!-- <div class="NavLogoMobil">
+      <p>EscaleSite </p>
+    </div> -->
+    <div [@slideIn]="slideInState ? 'in' : 'out'" class="NavLinksMobil">
+        <p><a (click)="changeState()" routerLink="/home-page" routerLinkActive="active-link">Home</a></p>
+        <p><a (click)="changeState()" routerLink="/about-us" routerLinkActive="active-link">About</a></p>
+        <p><a (click)="changeState()" routerLink="/portfolio" routerLinkActive="active-link">Portfolio</a></p>
+        <p><a (click)="changeState()" routerLink="/contact-us" routerLinkActive="active-link">Contact</a></p>
+    </div>
+  </div>
+<!-- End Global Navigation Mobil -->
 
 
 <router-outlet></router-outlet>
