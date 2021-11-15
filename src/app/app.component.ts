@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { openCloseAnimation } from './animations/open-close'
-
+import { mobilMenuIconChange } from './animations/mobil-menu-icon'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [ openCloseAnimation ]
+  animations: [ openCloseAnimation, mobilMenuIconChange ]
 
   
 })
@@ -21,4 +21,10 @@ export class AppComponent {
     this.slideInState = !this.slideInState;
 
   }
+
+   // flag be consumed by the template
+   isHamburguer = true;
+   onClick() {
+     this.isHamburguer = !this.isHamburguer;
+   }
 }
