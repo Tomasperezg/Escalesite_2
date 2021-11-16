@@ -5,6 +5,7 @@
     height: 450px;
     display: flex;
     justify-content: center;
+    flex-direction: row-reverse;
     margin-top: 40px;
     .heroImage{
         width: 45%;
@@ -37,27 +38,9 @@
            
         }
     }
-    .heroTextContainerHome{
-        background-color:#272361;
-        color: white;
-    }
     .heroRightTextContainerHome{
         background-color: #67B8DE;
         color: white;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .heroTextContainerContact{
-        background-color: #8AD0D4;
-        color: white;
-    }
-    .heroTextContainerPortfolio{
-        background-color: #FBFBFD;
-        color: $primary-font-color;
-    }
-    .heroTextContainerAbout{
-        background-color: #DFEDF8;
-        color: $primary-font-color;
     }
 }
 

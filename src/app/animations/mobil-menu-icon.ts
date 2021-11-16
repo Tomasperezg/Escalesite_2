@@ -16,9 +16,9 @@ export const mobilMenuIconChange = trigger('hamburguerX', [
     state(
       'topX',
       style({
-        transform: 'rotate(45deg)',
+        transform: 'rotate(46deg)',
         transformOrigin: 'left',
-        margin: '6px',
+        margin: '8px',
       })
     ),
     // hides element when create the X (used in the middle bar)
@@ -32,9 +32,9 @@ export const mobilMenuIconChange = trigger('hamburguerX', [
     state(
       'bottomX',
       style({
-        transform: 'rotate(-45deg)',
+        transform: 'rotate(-46deg)',
         transformOrigin: 'left',
-        margin: '6px',
+        margin: '8px',
       })
     ),
     transition('* => *', [

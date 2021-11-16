@@ -10,6 +10,7 @@ import { AboutComponent } from './layouts/about/about.component';
 import { PortfolioComponent } from './layouts/portfolio/portfolio.component';
 import { ParagraphComponent } from './componentList/paragraph/paragraph.component';
 import { ButtonComponent } from './componentList/button/button.component';
+import { HerobannerRComponent } from './componentList/herobanner-r/herobanner-r.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ButtonComponent } from './componentList/button/button.component';
     AboutComponent,
     PortfolioComponent,
     ParagraphComponent,
-    ButtonComponent
+    ButtonComponent,
+    HerobannerRComponent
   ],
   imports: [
     BrowserModule,
