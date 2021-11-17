@@ -9,6 +9,7 @@ export class HerobannerRComponent implements OnInit {
 
   @Input() maintText = '';
   @Input() subText = '';
+  @Input() textUrl = '';
   @Input() heroTextContainerClass = '';
   @Input() heroImage = '';
 

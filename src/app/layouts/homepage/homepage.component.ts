@@ -22,8 +22,21 @@ export class HomepageComponent implements OnInit {
 
   buttonText = "Learn More";
 
+  roundrecLeftImageUrl = "assets/gallery/EscaleSite_roundrec_Home_Left.png";
+  roundrecLeftClass = "roundrecLeftClass";
+  roundrecLeftText = "Building custom software specific for the needs of your business.";
+  roundrecLeftTextLink = "See what we can do → ";
+  roundrecLeftLinkUrl = "/about-us";
+
+  roundrecRightImageUrl = "assets/gallery/Escalesite_roundrec_Home_Right.png";
+  roundrecRightClass = "roundrecRightClass";
+  roundrecRightText = "Designs that will help to improve your customers experience.";
+  roundrecRightTextLink = "Check our portfolio → ";
+  roundrecRightLinkUrl = "/portfolio";
+
   heroRightImageUrl = "assets/gallery/Escalesite_Hero2_HomePage.png";
   currentheroRightTextContainerClass = "heroRightTextContainerHome";
   currentMainTextRight = "Tell us how can we help your business grow";
   currentSubTextRight = "Send us a message →  ";
+  currentTextUrlRight = "/contact-us";
 }

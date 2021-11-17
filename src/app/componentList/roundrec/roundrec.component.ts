@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-roundrec',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./roundrec.component.scss']
 })
 export class RoundrecComponent implements OnInit {
+
+  @Input() imageUrl = '';
+  @Input() className = '';
+  @Input() text = '';
+  @Input() textLink = '';
+  @Input() link = '';
 
   constructor() { }
 
