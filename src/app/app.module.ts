@@ -11,6 +11,7 @@ import { PortfolioComponent } from './layouts/portfolio/portfolio.component';
 import { ParagraphComponent } from './componentList/paragraph/paragraph.component';
 import { ButtonComponent } from './componentList/button/button.component';
 import { HerobannerRComponent } from './componentList/herobanner-r/herobanner-r.component';
+import { RoundrecComponent } from './componentList/roundrec/roundrec.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HerobannerRComponent } from './componentList/herobanner-r/herobanner-r.
     PortfolioComponent,
     ParagraphComponent,
     ButtonComponent,
-    HerobannerRComponent
+    HerobannerRComponent,
+    RoundrecComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+#roundrecContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+// Mobil
+@media screen and (max-width: 767px){
+    #roundrecContainer{
+        justify-content: center;
+        flex-direction: column;
+        app-roundrec{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
