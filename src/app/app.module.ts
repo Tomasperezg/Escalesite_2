@@ -12,6 +12,7 @@ import { ParagraphComponent } from './componentList/paragraph/paragraph.componen
 import { ButtonComponent } from './componentList/button/button.component';
 import { HerobannerRComponent } from './componentList/herobanner-r/herobanner-r.component';
 import { RoundrecComponent } from './componentList/roundrec/roundrec.component';
+import { TitlecomponentComponent } from './componentList/titlecomponent/titlecomponent.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RoundrecComponent } from './componentList/roundrec/roundrec.component';
     ParagraphComponent,
     ButtonComponent,
     HerobannerRComponent,
-    RoundrecComponent
+    RoundrecComponent,
+    TitlecomponentComponent
   ],
   imports: [
     BrowserModule,

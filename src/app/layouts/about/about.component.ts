@@ -20,4 +20,7 @@ export class AboutComponent implements OnInit {
   "We design and develop websites, web applications and custom software of different source. " + 
   "The process is simple, just send us a message with a description of your project and we will contact you to schedule a free consultation. " + 
   "There we will talk about the project budget, setting a target date, design and development timeline and provide answers to all your questions.";
+
+  titleData = "List of Thecnologies";
+
 }

@@ -1,0 +1,13 @@
+@import "src/styles";
+
+p{
+    font-family: $font-number-2;
+    font-weight: $font-number-2-strong;
+    font-size: $font-size-medium;
+    color: $primary-font-color;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  // Button functionallity
+  functionCall(event) {
+    console.log('functionCall', event);
+    this.router.navigateByUrl('/about-us');
   }
 
   currentMainText = "Helping Businesses Grow Through Thecnology";

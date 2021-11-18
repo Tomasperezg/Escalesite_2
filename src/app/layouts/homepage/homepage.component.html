@@ -3,7 +3,7 @@
 
 <app-paragraph [paragraphText]="mainText"></app-paragraph>
 
-<app-button [buttonData]="buttonText"></app-button>
+<app-button [buttonData]="buttonText" (onClick)="functionCall($event)"></app-button>
 
 <div id="roundrecContainer">
      <app-roundrec [imageUrl]="roundrecLeftImageUrl" [className]="roundrecLeftClass" [text]="roundrecLeftText" [textLink]="roundrecLeftTextLink" [link]="roundrecLeftLinkUrl"></app-roundrec>
