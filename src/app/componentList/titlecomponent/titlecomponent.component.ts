@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TitlecomponentComponent implements OnInit {
 
   @Input() titleText = '';
+  @Input() titleClassName = '';
 
   constructor() { }
 

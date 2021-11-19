@@ -1,0 +1,17 @@
+<div id="columnListContainer">
+    <div class="columListBox">
+        <div class="columns column-1">
+                <app-titlecomponent [titleClassName]="titleClass" [titleText]="titleColumn1"></app-titlecomponent>
+                <ul *ngFor="let item of techList; index as i">
+                    <li>{{item.item}}</li>
+                </ul>
+        </div>
+        <div class="columns column-2">
+                <app-titlecomponent [titleClassName]="titleClass" [titleText]="titleColumn2"></app-titlecomponent>
+        </div>
+        <div class="columns column-3">
+                <app-titlecomponent [titleClassName]="titleClass" [titleText]="titleColumn3"></app-titlecomponent>
+        </div>
+    </div>
+
+</div>

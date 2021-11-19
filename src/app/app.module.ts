@@ -13,6 +13,7 @@ import { ButtonComponent } from './componentList/button/button.component';
 import { HerobannerRComponent } from './componentList/herobanner-r/herobanner-r.component';
 import { RoundrecComponent } from './componentList/roundrec/roundrec.component';
 import { TitlecomponentComponent } from './componentList/titlecomponent/titlecomponent.component';
+import { ColumnListComponent } from './componentList/column-list/column-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TitlecomponentComponent } from './componentList/titlecomponent/titlecom
     ButtonComponent,
     HerobannerRComponent,
     RoundrecComponent,
-    TitlecomponentComponent
+    TitlecomponentComponent,
+    ColumnListComponent
   ],
   imports: [
     BrowserModule,
