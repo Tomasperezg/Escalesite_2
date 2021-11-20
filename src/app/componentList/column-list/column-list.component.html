@@ -8,9 +8,15 @@
         </div>
         <div class="columns column-2">
                 <app-titlecomponent [titleClassName]="titleClass" [titleText]="titleColumn2"></app-titlecomponent>
+                <ul *ngFor="let item of databaseList; index as i">
+                    <li>{{item.name}}</li>
+                </ul>
         </div>
         <div class="columns column-3">
                 <app-titlecomponent [titleClassName]="titleClass" [titleText]="titleColumn3"></app-titlecomponent>
+                <ul *ngFor="let item of toolsList; index as i">
+                    <li>{{item.item}}</li>
+                </ul>
         </div>
     </div>
 

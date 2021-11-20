@@ -22,27 +22,70 @@ export class ColumnListComponent implements OnInit {
 
   techList: any[] = [
     {
-      "item": "HTML"
+      item: "HTML"
     }, 
     {
-      "item": "CSS"
+      item: "CSS"
     },
     {
-      "item": "JavaScript"
+      item: "JavaScript"
     },
     {
-      "item": "Angular"
+      item: "Angular"
     }, 
     {
-      "item": "AngularJS"
+      item: "AngularJS"
     },
     {
-      "item": "Python"
+      item: "Python"
     },
     {
-      "item": "Java"
+      item: "Java"
+    },
+    {
+      item: "Node"
+    },
+    {
+      item: "Express"
+    },
+    {
+      item: "Version Control"
     }
   ];
+
+  databaseList: any[] = [
+    {
+      name: "MongoDB"
+    },
+    {
+      name: "MySQL"
+    },
+    {
+      name: "PostgresSQL"
+    },
+    {
+      name: "AWS"
+    } 
+
+  ];
+
+  toolsList: any[] = [
+    {
+      item: "Adobe Phothsop"
+    }, 
+    {
+      item: "Adobe XD"
+    },
+    {
+      item: "Adobe Illustrator"
+    }, 
+    {
+      item: "Workfront"
+    }, 
+    {
+      item: "Trello"
+    },
+  ]
 
 
 }
