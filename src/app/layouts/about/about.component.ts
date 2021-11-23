@@ -23,4 +23,7 @@ export class AboutComponent implements OnInit {
 
   titleData = "List of Thecnologies";
 
+
+  titleData2 = "What we can do"
+
 }

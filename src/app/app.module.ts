@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import { HomepageComponent } from './layouts/homepage/homepage.component';
 import { HerobannerComponent } from './componentList/herobanner/herobanner.component';
 import { ContactComponent } from './layouts/contact/contact.component';
@@ -14,6 +15,7 @@ import { HerobannerRComponent } from './componentList/herobanner-r/herobanner-r.
 import { RoundrecComponent } from './componentList/roundrec/roundrec.component';
 import { TitlecomponentComponent } from './componentList/titlecomponent/titlecomponent.component';
 import { ColumnListComponent } from './componentList/column-list/column-list.component';
+import { FormComponent } from './componentList/form/form.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,14 @@ import { ColumnListComponent } from './componentList/column-list/column-list.com
     HerobannerRComponent,
     RoundrecComponent,
     TitlecomponentComponent,
-    ColumnListComponent
+    ColumnListComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
