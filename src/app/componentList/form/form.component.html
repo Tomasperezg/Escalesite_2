@@ -1,1 +1,26 @@
-<p>form works!</p>
+<div id="formOuterContainer">
+    <div class="formInterContainer">
+        <form #userForm class="formContent">
+            <!-- Name -->
+            <label for="name">Full Name: </label>
+            <input type="text" id="name" required [(ngModel)]="model.name" name="name">
+            <br/>
+            <!-- Email -->
+            <label for="email">Email: </label>
+            <input type="text" id="email" required [(ngModel)]="model.email" name="email">
+            <br/>
+            <!-- Phone -->
+            <label for="phone">Phone #: </label>
+            <input type="number" id="phone" required [(ngModel)]="model.phone" name="phone">
+            <br/>
+            <label for="companyName">Company Name: </label>
+            <input type="text" id="companyName" [(ngModel)]="model.companyName" name="companyName">
+            <br/>
+            <!-- Description -->
+            <label for="description">Description: </label>
+            <br/>
+            <textarea type="text" id="description" required [(ngModel)]="model.description" name="description"></textarea>
+        </form>
+
+    </div>
+</div>
