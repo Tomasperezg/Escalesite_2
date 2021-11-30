@@ -7,30 +7,60 @@
     margin-bottom: 80px;
     .formInterContainer{
         width: 600px;
-        height: 700px;
+        height: 780px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
         box-shadow: 5px 10px 18px #888888;
         background-color: #8AD0D4;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
         .formContent{
+            margin-top: 40px;
+            width: 85%;
             // border: 2px solid black;
+            label{
+                font-family: $font-number-2;
+                font-weight: $font-number-2-strong;
+                font-size: $font-size-medium;
+                color: white;
+            }
             input[type=text], input[type=number]{
-                width: 60%;
+                width: 100%;
                 padding: 12px 20px;
                 margin: 8px 0;
                 box-sizing: border-box;
                 border: none;
-                border-bottom: 2px solid $primary-font-color;
+                border-bottom: 2px solid white;
                 background-color: #8AD0D4;
+                color: white;
+                height: 25px;
+            }
+            .ng-valid[required], ng-valid.required{
+                border-bottom-color: white;
+            }
+            .ng-invalid:not(form){
+                border-bottom-color: red;
+            }
+            .formError{
+                color: red;
+                font-family: $font-number-2;
+                font-weight: $font-number-2-light;
+                font-size: $font-size-error;
+
             }
             textarea{
-                width: 60%;
-                height: 120px;
+                width: 100%;
+                height: 100px;
                 border-top: none;
                 border-left: none;
                 border-right: none;
-                border-bottom: 2px solid $primary-font-color;
+                border-bottom: 2px solid white;
                 background-color: #8AD0D4;
+                color: white;
+            }
+            .formButtonContainer{
+                margin-top: 80px;
             }
         }
     }

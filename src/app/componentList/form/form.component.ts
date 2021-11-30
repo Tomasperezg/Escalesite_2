@@ -14,9 +14,16 @@ export class FormComponent implements OnInit {
 
   }
 
-  model = new User('Peter B. Parker', "Spiderman@gmail.com", 6164270725, "Spider Organization", "Spider-man Spider-man..");
+  buttonText = "Submit";
+  class = "formButton"
+
+  model = new User('Peter B. Parker', "Spiderman@gmail.com", +1, "Spider Organization", "Spider-man Spider-man..");
 
   submitted = false;
 
-
+  // Button functionallity
+  functionCall(event) {
+    console.log('functionCall', event);
+    this.model = new User("Tom", '', +1, '', '');
+  }
 }

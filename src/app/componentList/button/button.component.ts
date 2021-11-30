@@ -9,6 +9,7 @@ import { EventEmitter } from '@angular/core';
 export class ButtonComponent implements OnInit {
 
   @Input() buttonData = '';
+  @Input() className = '';
   @Output() onClick = new EventEmitter<any>();
 
   onClickButton(event) {

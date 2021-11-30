@@ -12,10 +12,23 @@
         padding: 10px;
         padding-left: 20px;
         padding-right: 20px;
-        background-color: white;
+        background-color: transparent;
         border: 1px solid $primary-font-color;
         box-shadow: 2px 2px 2px #aaaaaa;
     }
+    .formButton{
+        width: 250px;
+        border: 1px solid white;
+        color: white;
+    }
+    .formButton:hover{
+        background-color: white;
+        color: $primary-font-color;
+        cursor: pointer;
+        transform: translatey(-1px);
+        transition: 0.5s;
+    }
+    
     button:hover{
         background-color: $primary-font-color;
         color: white;

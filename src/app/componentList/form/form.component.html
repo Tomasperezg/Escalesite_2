@@ -1,25 +1,49 @@
 <div id="formOuterContainer">
     <div class="formInterContainer">
-        <form #userForm class="formContent">
+        <form (ngSubmit)="onSubmit()" #userForm class="formContent">
+                
             <!-- Name -->
-            <label for="name">Full Name: </label>
-            <input type="text" id="name" required [(ngModel)]="model.name" name="name">
+            <label for="name">Full Name*: </label>
+            <input type="text" id="name" required [(ngModel)]="model.name" name="name" class="ng-untouched ng-pristine ng-valid" #name="ngModel">
+            <!-- Error Message -->
+            <div [hidden]="name.valid || name.pristine" class="formError">
+                *Full Name is required
+            </div>
             <br/>
             <!-- Email -->
-            <label for="email">Email: </label>
-            <input type="text" id="email" required [(ngModel)]="model.email" name="email">
-            <br/>
+            <label for="email">Email*: </label>
+            <input type="text" id="email" required [(ngModel)]="model.email" name="email" class="ng-untouched ng-pristine ng-valid" #email="ngModel">
+            <!-- Error Message -->
+            <div [hidden]="email.valid || email.pristine" class="formError">
+                    *Email is required
+                </div>
+                <br/>
             <!-- Phone -->
-            <label for="phone">Phone #: </label>
-            <input type="number" id="phone" required [(ngModel)]="model.phone" name="phone">
+            <label for="phone">Phone #*: </label>
+            <input type="number" id="phone" required [(ngModel)]="model.phone" name="phone" class="ng-untouched ng-pristine ng-valid" #phone="ngModel">
+            <!-- Error Message -->
+            <div [hidden]="phone.valid || phone.pristine" class="formError">
+                *Phone # is required
+            </div>
             <br/>
+            <!-- Company Name -->
             <label for="companyName">Company Name: </label>
             <input type="text" id="companyName" [(ngModel)]="model.companyName" name="companyName">
             <br/>
-            <!-- Description -->
-            <label for="description">Description: </label>
             <br/>
-            <textarea type="text" id="description" required [(ngModel)]="model.description" name="description"></textarea>
+            <!-- Description -->
+            <label for="description">Description*: </label>
+            <br/>
+            <br/>
+            <textarea type="text" id="description" required [(ngModel)]="model.description" name="description" class="ng-untouched ng-pristine ng-valid" #description="ngModel"></textarea>
+            <!-- Error Message -->
+            <div [hidden]="description.valid || description.pristine" class="formError">
+                *Description is required
+            </div>
+            <div class="formButtonContainer">
+                <app-button [buttonData]="buttonText" [className]="class" (onClick)="functionCall($event)"></app-button>
+            </div>
+                
         </form>
 
     </div>
