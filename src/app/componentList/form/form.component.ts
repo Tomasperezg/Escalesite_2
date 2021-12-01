@@ -21,9 +21,10 @@ export class FormComponent implements OnInit {
 
   submitted = false;
 
-  // Button functionallity
-  functionCall(event) {
-    console.log('functionCall', event);
-    this.model = new User("Tom", '', +1, '', '');
+  onSubmit() { 
+    this.submitted = true;
+    console.log(this.submitted); 
   }
+
+  
 }

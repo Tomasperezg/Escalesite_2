@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, HostBinding } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 
 @Component({
@@ -11,6 +11,8 @@ export class ButtonComponent implements OnInit {
   @Input() buttonData = '';
   @Input() className = '';
   @Output() onClick = new EventEmitter<any>();
+  @Input() disabled ? = false;
+
 
   onClickButton(event) {
     this.onClick.emit(event);
@@ -20,5 +22,6 @@ export class ButtonComponent implements OnInit {
 
   ngOnInit() {
   }
+
 
 }
