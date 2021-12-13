@@ -26,7 +26,10 @@
                 font-size: $font-size-medium;
                 color: white;
             }
-            input[type=text], input[type=number]{
+            input[type=text], 
+            input[type=number],
+            input[type=tel],
+            input[type=email]{
                 width: 100%;
                 padding: 12px 20px;
                 margin: 8px 0;
@@ -99,9 +102,11 @@
         border-bottom-right-radius: 25px;
         box-shadow: 5px 10px 18px #888888;
         background-color: #8AD0D4;
-        text-align: center;
         color: white;
         margin-top: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         h2{
             font-family: $font-number-2;
             font-weight: $font-number-2-strong;
@@ -110,6 +115,11 @@
         h3{
             font-family: $font-number-2;
             font-weight: $font-number-2-strong;
+        }
+        .messageData{
+            text-align: left;
+            font-family: $font-number-2;
+            font-weight: $font-number-2-light;
         }
     }
 

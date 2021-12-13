@@ -16,6 +16,7 @@ import { RoundrecComponent } from './componentList/roundrec/roundrec.component';
 import { TitlecomponentComponent } from './componentList/titlecomponent/titlecomponent.component';
 import { ColumnListComponent } from './componentList/column-list/column-list.component';
 import { FormComponent } from './componentList/form/form.component';
+import { PhonePipe } from "./componentList/form/phonePipe.pipe"
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FormComponent } from './componentList/form/form.component';
     RoundrecComponent,
     TitlecomponentComponent,
     ColumnListComponent,
-    FormComponent
+    FormComponent,
+    PhonePipe
   ],
   imports: [
     BrowserModule,
