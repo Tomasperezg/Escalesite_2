@@ -47,9 +47,6 @@ export class ColumnListComponent implements OnInit {
     },
     {
       item: "Express"
-    },
-    {
-      item: "Version Control"
     }
   ];
 
@@ -85,6 +82,9 @@ export class ColumnListComponent implements OnInit {
     {
       item: "Trello"
     },
+    {
+      item: "Version Control"
+    }
   ]
 
 

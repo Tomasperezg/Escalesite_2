@@ -16,7 +16,8 @@ import { RoundrecComponent } from './componentList/roundrec/roundrec.component';
 import { TitlecomponentComponent } from './componentList/titlecomponent/titlecomponent.component';
 import { ColumnListComponent } from './componentList/column-list/column-list.component';
 import { FormComponent } from './componentList/form/form.component';
-import { PhonePipe } from "./componentList/form/phonePipe.pipe"
+import { PhonePipe } from "./componentList/form/phonePipe.pipe";
+import { FooterComponent } from './componentList/footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PhonePipe } from "./componentList/form/phonePipe.pipe"
     TitlecomponentComponent,
     ColumnListComponent,
     FormComponent,
-    PhonePipe
+    PhonePipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
