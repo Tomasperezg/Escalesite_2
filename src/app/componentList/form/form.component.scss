@@ -63,6 +63,14 @@
                 background-color: #8AD0D4;
                 color: white;
             }
+            .checkbox{
+                margin-top: 10px;
+                label{
+                    font-family: $font-number-2;
+                    font-weight: $font-number-2-strong;
+                    font-size: $font-size-small;
+                }
+            }
             
             .formButtonContainer{
                 margin-top: 80px;
@@ -120,6 +128,11 @@
             text-align: left;
             font-family: $font-number-2;
             font-weight: $font-number-2-light;
+        }
+        .signUpChecked{
+            font-family: $font-number-2;
+            font-weight: $font-number-2-light;
+            font-size: $font-size-medium;
         }
     }
 
