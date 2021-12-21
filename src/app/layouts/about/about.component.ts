@@ -24,6 +24,9 @@ export class AboutComponent implements OnInit {
   titleData = "List of Thecnologies";
 
 
-  titleData2 = "What we can do"
+  titleData2 = "Services";
+
+  img = "assets/gallery/EscaleBanner2sbRight.jpg";
+  alt = "Laptop image";
 
 }

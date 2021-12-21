@@ -1,0 +1,69 @@
+@import "src/styles";
+
+#rightBannerContainer{
+   
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    .interContainer{
+        width: 80%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        .imageContainer{
+            height: 400px;
+            width: 50%;
+            img{
+                width: 100%;
+                height: 400px;
+            }
+        }
+        .textContainer{
+            height: 400px;
+            width: 50%;
+            // background-color: #f3b221;
+            ul{
+                font-family: $font-number-2;
+                font-weight: $font-number-2-light;
+                color: $primary-font-color;
+                font-size: $font-size-small;
+                list-style: square;
+                margin-top: 70px;
+                
+                li{
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+// Mobil
+@media screen and (max-width: 767px){
+    #rightBannerContainer{
+        height: 800px;
+        display: flex;
+        text-align: center;
+        .interContainer{
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            height: 800px;
+            .imageContainer{
+                width: 100%;
+                height: 400px;
+            }
+            .textContainer{
+                width: 100%;
+                height: 400px;
+                ul{
+                    margin-top: 25px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+}
