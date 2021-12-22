@@ -1,0 +1,16 @@
+#fullWidthBannerContainer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    .bannerInterContainer{
+        height: 400px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    }
+}

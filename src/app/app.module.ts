@@ -18,7 +18,8 @@ import { ColumnListComponent } from './componentList/column-list/column-list.com
 import { FormComponent } from './componentList/form/form.component';
 import { PhonePipe } from "./componentList/form/phonePipe.pipe";
 import { FooterComponent } from './componentList/footer/footer.component';
-import { RightBannerComponent } from './componentList/right-banner/right-banner.component'
+import { RightBannerComponent } from './componentList/right-banner/right-banner.component';
+import { FullWidhtBannerComponent } from './componentList/full-widht-banner/full-widht-banner.component'
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { RightBannerComponent } from './componentList/right-banner/right-banner.
     FormComponent,
     PhonePipe,
     FooterComponent,
-    RightBannerComponent
+    RightBannerComponent,
+    FullWidhtBannerComponent
   ],
   imports: [
     BrowserModule,
