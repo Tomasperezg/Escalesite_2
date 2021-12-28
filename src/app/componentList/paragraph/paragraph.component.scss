@@ -1,14 +1,19 @@
 @import "src/styles";
 
 #paragraphContainer{
-    margin-top: 60px;
+    margin-top: 40px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    p{
+    .paragraphInterContainer{
         width: 80%;
-        color: $primary-font-color;
-        font-family: $font-number-2;
-        font-weight: $font-number-2-light;
-        font-size: $font-size-medium;
+        p{
+            color: $primary-font-color;
+            font-family: $font-number-2;
+            font-weight: $font-number-2-light;
+            font-size: $font-size-medium;
+            
+        }
+
     }
 }

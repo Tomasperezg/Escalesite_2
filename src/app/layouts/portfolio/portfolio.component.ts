@@ -21,7 +21,12 @@ export class PortfolioComponent implements OnInit {
   imageSRC = "assets/gallery/blackbirdhomesTile.png";
   imageALT = "BlackBirdHomes Tile";
 
-  mainText = "Some Text Example";
+  mainText = "An Small home renovation company located in the Grand Rapids, MI. area. " +
+  "BlackBird Homes GR was in need of a website refresh. Their old software was having a lot issues mostly with tablet and mobil users. " +
+  "Content was not rendering correctly for these users or the browswer would try to fit the desktop version in mobil devices. " + 
+  "";
+
+  mainText2 = "After meeting with the owner, testing the page for errors it was decided that a complete 360 degress page refresh was needed.";
 
 }
 

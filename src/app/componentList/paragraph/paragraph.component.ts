@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ParagraphComponent implements OnInit {
 
   @Input() paragraphText = '';
+  @Input() paragraphText2 = '';
 
   constructor() { }
 
