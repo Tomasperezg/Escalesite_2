@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
@@ -26,7 +27,17 @@ export class PortfolioComponent implements OnInit {
   "Content was not rendering correctly for these users or the browswer would try to fit the desktop version in mobil devices. " + 
   "";
 
-  mainText2 = "After meeting with the owner, testing the page for errors it was decided that a complete 360 degress page refresh was needed.";
+  mainText2 = "After meeting with the owner, testing the page for errors it was decided that a complete 360 degress page refresh was needed. " +
+  "We designed, developed, tested, and launched their new website that fixed all errors and also enhanced the user experince.";
+
+  Project_1_buttonText = "View Live Project"
+  lowTitleData = "Technologies used"
+  lowTitleDataClass = "lowerTitle"
+  // Button functionallity
+  project_1_url = "https://www.blackbirdhomesgr.com/home"
+  functionCall(url) {
+    window.open(url);
+  }
 
 }
 
