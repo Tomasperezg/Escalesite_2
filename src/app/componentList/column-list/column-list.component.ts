@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-column-list',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./column-list.component.scss']
 })
 export class ColumnListComponent implements OnInit {
+
+  @Input() devList: string[];
+  @Input() databaseList: string[];
+  @Input() toolsList: string[];
 
   constructor() { 
 
@@ -20,72 +24,8 @@ export class ColumnListComponent implements OnInit {
   titleColumn3 = "Digital Tools";
   titleClass = "columnsTitle"
 
-  techList: any[] = [
-    {
-      item: "HTML"
-    }, 
-    {
-      item: "CSS"
-    },
-    {
-      item: "JavaScript"
-    },
-    {
-      item: "Angular"
-    }, 
-    {
-      item: "AngularJS"
-    },
-    {
-      item: "Python"
-    },
-    {
-      item: "Java"
-    },
-    {
-      item: "Node"
-    },
-    {
-      item: "Express"
-    }
-  ];
 
-  databaseList: any[] = [
-    {
-      name: "MongoDB"
-    },
-    {
-      name: "MySQL"
-    },
-    {
-      name: "PostgresSQL"
-    },
-    {
-      name: "AWS"
-    } 
-
-  ];
-
-  toolsList: any[] = [
-    {
-      item: "Adobe Phothsop"
-    }, 
-    {
-      item: "Adobe XD"
-    },
-    {
-      item: "Adobe Illustrator"
-    }, 
-    {
-      item: "Workfront"
-    }, 
-    {
-      item: "Trello"
-    },
-    {
-      item: "Version Control"
-    }
-  ]
+  
 
 
 }

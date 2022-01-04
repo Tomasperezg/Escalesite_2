@@ -24,6 +24,74 @@ export class AboutComponent implements OnInit {
   titleData = "List of Thecnologies";
 
 
+  devList: any[] = [
+    {
+      item: "HTML"
+    }, 
+    {
+      item: "CSS"
+    },
+    {
+      item: "JavaScript"
+    },
+    {
+      item: "Angular"
+    }, 
+    {
+      item: "AngularJS"
+    },
+    {
+      item: "Python"
+    },
+    {
+      item: "Java"
+    },
+    {
+      item: "Node"
+    },
+    {
+      item: "Express"
+    }
+  ];
+
+  databaseList: any[] = [
+    {
+      item: "MongoDB"
+    },
+    {
+      item: "MySQL"
+    },
+    {
+      item: "PostgresSQL"
+    },
+    {
+      item: "AWS"
+    } 
+
+  ];
+
+  toolsList: any[] = [
+    {
+      item: "Adobe Phothsop"
+    }, 
+    {
+      item: "Adobe XD"
+    },
+    {
+      item: "Adobe Illustrator"
+    }, 
+    {
+      item: "Workfront"
+    }, 
+    {
+      item: "Trello"
+    },
+    {
+      item: "Version Control"
+    }
+  ]
+
+
   titleData2 = "Services";
 
   img = "assets/gallery/EscaleBanner2sbRight.jpg";
