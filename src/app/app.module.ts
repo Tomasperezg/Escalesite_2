@@ -19,7 +19,8 @@ import { FormComponent } from './componentList/form/form.component';
 import { PhonePipe } from "./componentList/form/phonePipe.pipe";
 import { FooterComponent } from './componentList/footer/footer.component';
 import { RightBannerComponent } from './componentList/right-banner/right-banner.component';
-import { FullWidhtBannerComponent } from './componentList/full-widht-banner/full-widht-banner.component'
+import { FullWidhtBannerComponent } from './componentList/full-widht-banner/full-widht-banner.component';
+import { ProjectOneComponent } from './layouts/project-one/project-one.component'
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { FullWidhtBannerComponent } from './componentList/full-widht-banner/full
     PhonePipe,
     FooterComponent,
     RightBannerComponent,
-    FullWidhtBannerComponent
+    FullWidhtBannerComponent,
+    ProjectOneComponent
   ],
   imports: [
     BrowserModule,

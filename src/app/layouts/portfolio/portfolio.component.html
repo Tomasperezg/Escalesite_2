@@ -1,8 +1,23 @@
 <app-herobanner [heroImage]="heroImageUrl" [heroTextContainerClass]="currentheroTextContainerClass" [maintText]="currentMainText" [subText]="currentSubText" ></app-herobanner>
+<!-- Start Portfolio View -->
+<div id="roundrecContainer">
+        <app-roundrec [imageUrl]="roundrecLeftImageUrl" [className]="roundrecLeftClass" [text]="roundrecLeftText" [textLink]="roundrecLeftTextLink" [link]="roundrecLeftLinkUrl"></app-roundrec>
+        <app-roundrec [imageUrl]="roundrecRightImageUrl" [className]="roundrecRightClass" [text]="roundrecRightText" [textLink]="roundrecRightTextLink" [link]="roundrecRightLinkUrl"></app-roundrec>
 
-<app-titlecomponent [titleText]="titleData"></app-titlecomponent>
+
+</div>
+<!-- End Portfolio View -->
+<!-- Project #1 -->
+<!-- <app-titlecomponent [titleText]="titleData"></app-titlecomponent>
 <app-full-widht-banner [imgSRC]="imageSRC" [imgALT]="imageALT"></app-full-widht-banner>
 <app-paragraph [paragraphText]="mainText" [paragraphText2]="mainText2"></app-paragraph>
 <app-titlecomponent [titleClassName]="lowTitleDataClass" [titleText]="lowTitleData"></app-titlecomponent>
-<app-column-list></app-column-list>
-<app-button [buttonData]="Project_1_buttonText" (onClick)="functionCall(project_1_url)"></app-button>
+<app-column-list [devList]="devList" [databaseList]="databaseList" [toolsList]="toolsList"></app-column-list>
+<app-button [buttonData]="Project_1_buttonText" (onClick)="functionCall(project_1_url)"></app-button> -->
+
+<!-- Project #2 -->
+<!-- <app-titlecomponent [titleText]="project_2_title"></app-titlecomponent>
+<app-full-widht-banner [imgSRC]="project_2_imageSRC" [imgALT]="project_2_imageALT"></app-full-widht-banner>
+<app-paragraph [paragraphText]="project_2_paragraph1" [paragraphText2]="project_2_paragraph2"></app-paragraph>
+<app-titlecomponent [titleClassName]="lowTitleDataClass" [titleText]="lowTitleData"></app-titlecomponent>
+<app-column-list [devList]="devList" [databaseList]="databaseList" [toolsList]="toolsList"></app-column-list> -->

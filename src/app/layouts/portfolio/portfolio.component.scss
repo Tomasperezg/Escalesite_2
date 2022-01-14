@@ -1,0 +1,18 @@
+#roundrecContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+// Mobil
+@media screen and (max-width: 767px){
+    #roundrecContainer{
+        justify-content: center;
+        flex-direction: column;
+        app-roundrec{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
