@@ -20,7 +20,8 @@ import { PhonePipe } from "./componentList/form/phonePipe.pipe";
 import { FooterComponent } from './componentList/footer/footer.component';
 import { RightBannerComponent } from './componentList/right-banner/right-banner.component';
 import { FullWidhtBannerComponent } from './componentList/full-widht-banner/full-widht-banner.component';
-import { ProjectOneComponent } from './layouts/project-one/project-one.component'
+import { BlackbirdprojectComponent } from './layouts/blackbirdproject/blackbirdproject.component';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { ProjectOneComponent } from './layouts/project-one/project-one.component
     FooterComponent,
     RightBannerComponent,
     FullWidhtBannerComponent,
-    ProjectOneComponent
+    BlackbirdprojectComponent
   ],
   imports: [
     BrowserModule,

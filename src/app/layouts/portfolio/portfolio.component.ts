@@ -23,7 +23,7 @@ export class PortfolioComponent implements OnInit {
 roundrecLeftImageUrl = "assets/gallery/blackbirdhomesTile.png";
 roundrecLeftText = "BlackBird Homes GR";
 roundrecLeftTextLink = "Learn More →";
-roundrecLeftLinkUrl = "/";
+roundrecLeftLinkUrl = "/blackbird-homes-gr";
 roundrecLeftClass = "roundrecPortfolioClass"
 
 // project 2

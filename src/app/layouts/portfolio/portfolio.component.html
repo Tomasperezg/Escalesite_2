@@ -1,10 +1,10 @@
 <app-herobanner [heroImage]="heroImageUrl" [heroTextContainerClass]="currentheroTextContainerClass" [maintText]="currentMainText" [subText]="currentSubText" ></app-herobanner>
 <!-- Start Portfolio View -->
 <div id="roundrecContainer">
-        <app-roundrec [imageUrl]="roundrecLeftImageUrl" [className]="roundrecLeftClass" [text]="roundrecLeftText" [textLink]="roundrecLeftTextLink" [link]="roundrecLeftLinkUrl"></app-roundrec>
-        <app-roundrec [imageUrl]="roundrecRightImageUrl" [className]="roundrecRightClass" [text]="roundrecRightText" [textLink]="roundrecRightTextLink" [link]="roundrecRightLinkUrl"></app-roundrec>
-
-
+    <div class="roundrecInterContainer">
+            <app-roundrec [imageUrl]="roundrecLeftImageUrl" [className]="roundrecLeftClass" [text]="roundrecLeftText" [textLink]="roundrecLeftTextLink" [link]="roundrecLeftLinkUrl"></app-roundrec>
+            <app-roundrec [imageUrl]="roundrecRightImageUrl" [className]="roundrecRightClass" [text]="roundrecRightText" [textLink]="roundrecRightTextLink" [link]="roundrecRightLinkUrl"></app-roundrec>
+    </div>
 </div>
 <!-- End Portfolio View -->
 <!-- Project #1 -->
