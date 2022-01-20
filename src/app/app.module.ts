@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { FooterComponent } from './componentList/footer/footer.component';
 import { RightBannerComponent } from './componentList/right-banner/right-banner.component';
 import { FullWidhtBannerComponent } from './componentList/full-widht-banner/full-widht-banner.component';
 import { BlackbirdprojectComponent } from './layouts/blackbirdproject/blackbirdproject.component';
+import { MomentumprojectComponent } from './layouts/momentumproject/momentumproject.component';
 
 
 @NgModule({
@@ -42,10 +44,12 @@ import { BlackbirdprojectComponent } from './layouts/blackbirdproject/blackbirdp
     FooterComponent,
     RightBannerComponent,
     FullWidhtBannerComponent,
-    BlackbirdprojectComponent
+    BlackbirdprojectComponent,
+    MomentumprojectComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule
