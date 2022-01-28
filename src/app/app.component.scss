@@ -17,6 +17,8 @@
     .NavLogo{
         color: $primary-font-color;
         padding-left: 20px;
+        font-family: $font-number-2;
+        font-weight: $font-number-2-strong;
     }
     .NavLinks{
         color: $primary-font-color;
@@ -82,7 +84,7 @@
             display: inline-block;
            
             cursor: pointer;
-            margin-left: 10px;
+            padding-left: 10px;
             margin-top: 18px;
             background-color: white;
             .icon-bar{
@@ -105,6 +107,7 @@
             text-align: center;
             justify-content: center;
             background-color: white;
+            z-index: -1;
             p{
                 font-family: $font-number-2;
                 font-weight: $font-number-2-strong;

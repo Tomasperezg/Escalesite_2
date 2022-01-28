@@ -26,7 +26,7 @@ export class BlackbirdprojectComponent implements OnInit {
 
   Project_1_buttonText = "View Live Project"
   lowTitleData = "Technologies used"
-  lowTitleDataClass = "lowerTitle"
+
 
   devList: any[] = [
     {

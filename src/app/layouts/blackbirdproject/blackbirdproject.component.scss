@@ -1,0 +1,14 @@
+@import "src/styles";
+
+.buttonLink{
+    display: flex;
+    justify-content: center;
+    p{
+        font-size: $font-size-medium;
+        font-family: $font-number-2;
+        font-weight: $font-number-2-light;
+        a{
+            color: $primary-font-color;
+        }
+    }
+}
