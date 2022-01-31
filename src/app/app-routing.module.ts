@@ -6,6 +6,7 @@ import { AboutComponent } from './layouts/about/about.component';
 import { PortfolioComponent } from './layouts/portfolio/portfolio.component';
 import { BlackbirdprojectComponent } from './layouts/blackbirdproject/blackbirdproject.component'
 import { MomentumprojectComponent } from './layouts/momentumproject/momentumproject.component';
+import { ErrorpageComponent } from './layouts/errorpage/errorpage.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'portfolio', component: PortfolioComponent},
   {path: 'portfolio/blackbird-homes-gr', component: BlackbirdprojectComponent},
   {path: 'portfolio/momentum-center', component: MomentumprojectComponent},
-  {path: '', redirectTo: '/home-page', pathMatch: 'full' }
+  {path: '', redirectTo: '/home-page', pathMatch: 'full' },
+  {path: '**', component: ErrorpageComponent }
 ];
 
 @NgModule({

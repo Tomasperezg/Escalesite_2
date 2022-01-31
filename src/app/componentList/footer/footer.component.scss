@@ -21,7 +21,7 @@ footer{
     }
     .FooterMenuList{
         // border: 2px solid white;
-        width: 600px;
+        width: 800px;
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
@@ -38,6 +38,15 @@ footer{
         .HelpFooter{
             // border: 2px solid white;
             width: 200px;
+            p{
+                color: white;
+                font-family: $font-number-2;
+                font-size: $font-size-small;
+                font-weight: $font-number-2-light;
+            }
+        }
+        .SocialFooter{
+            width: 280px;
             p{
                 color: white;
                 font-family: $font-number-2;

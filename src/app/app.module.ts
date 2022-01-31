@@ -23,6 +23,7 @@ import { RightBannerComponent } from './componentList/right-banner/right-banner.
 import { FullWidhtBannerComponent } from './componentList/full-widht-banner/full-widht-banner.component';
 import { BlackbirdprojectComponent } from './layouts/blackbirdproject/blackbirdproject.component';
 import { MomentumprojectComponent } from './layouts/momentumproject/momentumproject.component';
+import { ErrorpageComponent } from './layouts/errorpage/errorpage.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { MomentumprojectComponent } from './layouts/momentumproject/momentumproj
     RightBannerComponent,
     FullWidhtBannerComponent,
     BlackbirdprojectComponent,
-    MomentumprojectComponent
+    MomentumprojectComponent,
+    ErrorpageComponent
   ],
   imports: [
     BrowserModule,
