@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../form/user-form'
+import { MessageService } from './message.service';
 
 
 @Component({
@@ -13,7 +14,7 @@ import { User } from '../form/user-form'
 
 export class FormComponent implements OnInit {
   
-  constructor() { }
+  constructor(private _messageService: MessageService) { }
 
   ngOnInit(): void {
 
@@ -32,7 +33,11 @@ export class FormComponent implements OnInit {
   
   onSubmit() { 
     this.submitted = true;
-    console.log(this.submitted);
+    this._messageService.send(this.model)
+    .subscribe(
+      data => console.log('Success', data),
+      error => console.log('Eror', error)
+    )
   }
 
   
