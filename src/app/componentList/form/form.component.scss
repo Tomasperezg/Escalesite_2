@@ -43,7 +43,7 @@
             .ng-valid[required], ng-valid.required{
                 border-bottom-color: white;
             }
-            .ng-invalid:not(form){
+            .ng-valid:not(form){
                 border-bottom-color: red;
             }
             .formError{

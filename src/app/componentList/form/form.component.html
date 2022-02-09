@@ -4,9 +4,9 @@
                 
             <!-- Name -->
             <label for="name">Full Name*: </label>
-            <input type="text" id="name" required [(ngModel)]="model.name" name="name" class="ng-untouched ng-pristine ng-valid" #name="ngModel">
+            <input type="text" id="name" required [(ngModel)]="model.name" class="ng-untouched ng-dirty ng-valid" name="name" #name="ngModel">
             <!-- Error Message -->
-            <div [hidden]="name.valid || name.pristine" class="formError">
+            <div *ngIf="name.invalid && name.dirty || name.invalid && name.touched " class="formError">
                 *Full Name is required
             </div>
             <br/>
@@ -14,7 +14,7 @@
             <label for="email">Email*: </label>
             <input type="email" id="email" required email [(ngModel)]="model.email" name="email" class="ng-untouched ng-pristine ng-valid" #email="ngModel">
             <!-- Error Message -->
-            <div [hidden]="email.valid || email.pristine" class="formError">
+            <div *ngIf="email.invalid && email.dirty || email.invalid && email.touched" class="formError">
                     *Email is required
                 </div>
                 <br/>
@@ -22,7 +22,7 @@
             <label for="phone">Phone #*: </label>
             <input type="text" pattern="^\d{10}$" id="phone" required [(ngModel)]="model.phone" name="phone" class="ng-untouched ng-pristine ng-valid" #phone="ngModel">
             <!-- Error Message -->
-            <div [hidden]="phone.valid || phone.pristine || phone.untouched" class="formError">
+            <div *ngIf="phone.invalid && phone.dirty || phone.invalid && phone.touched" class="formError">
                 *Phone # musdt be 10 digits
             </div>
             <br/>
@@ -37,7 +37,7 @@
             <br/>
             <textarea type="text" id="description" required [(ngModel)]="model.description" name="description" class="ng-untouched ng-pristine ng-valid" #description="ngModel"></textarea>
             <!-- Error Message -->
-            <div [hidden]="description.valid || description.pristine" class="formError">
+            <div *ngIf="description.invalid && description.dirty || description.invalid && description.touched" class="formError">
                 *Description is required
             </div>
             <!-- News Letter -->

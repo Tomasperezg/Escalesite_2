@@ -23,7 +23,7 @@ export class FormComponent implements OnInit {
   submitted = false;
   isChecked = false;
 
-  model = new User('Peter B. Parker', "Spiderman@gmail.com", '1334067895', "Spider Organization", "Spider-man Spider-man..", this.isChecked);
+  model = new User('', "", '', "", "", this.isChecked);
 
   updateVal(){
     this.isChecked = true;
