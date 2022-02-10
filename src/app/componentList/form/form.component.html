@@ -4,7 +4,7 @@
                 
             <!-- Name -->
             <label for="name">Full Name*: </label>
-            <input type="text" id="name" required [(ngModel)]="model.name" class="ng-untouched ng-dirty ng-valid" name="name" #name="ngModel">
+            <input type="text" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel">
             <!-- Error Message -->
             <div *ngIf="name.invalid && name.dirty || name.invalid && name.touched " class="formError">
                 *Full Name is required

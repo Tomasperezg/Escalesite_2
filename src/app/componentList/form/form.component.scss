@@ -40,10 +40,10 @@
                 color: white;
                 height: 25px;
             }
-            .ng-valid[required], ng-valid.required{
-                border-bottom-color: white;
+            input.ng-invalid.ng-touched{
+                border-bottom-color: red;
             }
-            .ng-valid:not(form){
+            textarea.ng-invalid.ng-touched{
                 border-bottom-color: red;
             }
             .formError{
