@@ -1,5 +1,5 @@
 <div id="formOuterContainer">
-    <div [hidden]="submitted" class="formInterContainer">
+    <div *ngIf="!submitted" class="formInterContainer">
         <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="formContent">
                 
             <!-- Name -->
@@ -54,7 +54,7 @@
 
     </div>
     <!-- Succeful Message -->
-    <div class="formSubmittedContainer" [hidden]="!submitted">
+    <div class="formSubmittedContainer" *ngIf="submitted && succsessMsg">
         <h2>Thank you for your message.</h2>
         <h3>We will reach out soon!</h3>
         <div class="messageData">
@@ -63,12 +63,18 @@
             <p>Email: <u>{{model.email | uppercase}}</u></p>
             <p>Phone #: <u>{{model.phone | phoneNumber }}</u></p>
         </div>
-        <div [hidden]="!isChecked" class="signUpChecked">
+        <div *ngIf="isChecked" class="signUpChecked">
             <p>Thank you for joining our newsletter!</p>
         </div>
         
     </div>
-    
+    <!-- System Error -->
+    <div class="formSubmittedContainer" *ngIf="submitted && requestError">
+    <h2>oh oh.. there was an error in our system!</h2>
+    <h3>Please try again!</h3>
+    <app-button [buttonData]="buttonText" (onClick)="functionCall($event)"></app-button>
+
+    </div>
     
 </div>
 
