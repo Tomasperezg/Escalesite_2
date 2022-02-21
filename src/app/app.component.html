@@ -32,7 +32,8 @@
   </div>
 <!-- End Global Navigation Mobil -->
 
-
-<router-outlet></router-outlet>
+<div [@routeAnimations]="prepareRoute(outlet)" id="pageBodyComponents">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
 
 <app-footer></app-footer>

@@ -21,7 +21,7 @@ export const openCloseAnimation = trigger('slideIn', [
       transform: 'translateY(-150%)',
      
     })),
-    transition('* => in', animate('600ms ease-in')),
-    transition('in => out', animate('600ms ease-in'))
+    transition('* => in', animate('400ms ease-in')),
+    transition('in => out', animate('400ms ease-in'))
   ]);
 

@@ -10,15 +10,52 @@ import { ErrorpageComponent } from './layouts/errorpage/errorpage.component';
 
 
 const routes: Routes = [
-  {path: 'home-page', component: HomepageComponent },
-  {path: 'contact-us', component: ContactComponent},
-  {path: 'about-us', component: AboutComponent},
-  {path: 'portfolio', component: PortfolioComponent},
-  {path: 'portfolio/blackbird-homes-gr', component: BlackbirdprojectComponent},
-  {path: 'portfolio/momentum-center', component: MomentumprojectComponent},
-  {path: '', redirectTo: '/home-page', pathMatch: 'full' },
-  {path: '**', component: ErrorpageComponent }
-];
+  { 
+    path: '', 
+    children: [
+      {
+        path: 'home-page',
+        component: HomepageComponent,
+        data: { animation: 'HomePage' }
+      },
+      {
+        path: 'about-us',
+        component: AboutComponent,
+        data: { animation: 'AboutPage' }
+      },
+      {
+        path: 'portfolio',
+        component: PortfolioComponent,
+        data: { animation: 'PortfolioPage' }
+      },
+      {
+        path: 'portfolio/blackbird-homes-gr',
+        component: BlackbirdprojectComponent,
+        data: { animation: 'ProjectPage' }
+      },
+      {
+        path: 'portfolio/momentum-center',
+        component: MomentumprojectComponent,
+        data: { animation: 'ProjectPage' }
+      },
+      {
+        path: 'contact-us',
+        component: ContactComponent,
+        data: { animation: 'ContactPage' }
+      },
+      {
+        path: '',
+        redirectTo: '/home-page',
+        pathMatch: 'full'
+      },
+      {
+        path: '**',
+        component: ErrorpageComponent,
+        data: { animation: 'ErrorPage' }
+      }
+    ]
+  }
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],

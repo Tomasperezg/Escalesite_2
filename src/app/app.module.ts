@@ -26,6 +26,7 @@ import { MomentumprojectComponent } from './layouts/momentumproject/momentumproj
 import { ErrorpageComponent } from './layouts/errorpage/errorpage.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +55,8 @@ import { ErrorpageComponent } from './layouts/errorpage/errorpage.component';
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
