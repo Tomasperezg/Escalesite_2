@@ -1,17 +1,27 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { User } from './user-form';
+import { Observable, throwError, observable } from 'rxjs';
+import { catchError } from 'rxjs/operators'
 
+
+const _url = 'http://localhost:3500/form';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MessageService {
 
-  _url = 'http://localhost:3500/form';
+ 
   constructor( private _http: HttpClient) { }
 
-  send(user: User){
-    return this._http.post<any>(this._url, user);
+
+  send(user: User): Observable<any>{
+    return this._http.post<any>(_url, user).pipe(
+      catchError(this.errorHandler)
+    )
+  }
+  errorHandler(error: HttpErrorResponse){
+    return throwError(error.message || "Server Error");
   }
 }

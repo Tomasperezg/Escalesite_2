@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../form/user-form'
 import { MessageService } from './message.service';
 import { Router } from '@angular/router';
-
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-form',
@@ -14,17 +14,20 @@ import { Router } from '@angular/router';
 
 
 export class FormComponent implements OnInit {
-  
+
+
   constructor(private _messageService: MessageService, private router: Router) { }
+
+  submitted = false;
+  isChecked = false;
+  public requestError = '';
+  succsessMsg = '';
+  
 
   ngOnInit(): void {
 
   }
 
-  submitted = false;
-  isChecked = false;
-  requestError = '';
-  succsessMsg = '';
 
   model = new User('Tom', 'tom@tom.com', '1234567890', "", "Iron Code", this.isChecked);
 

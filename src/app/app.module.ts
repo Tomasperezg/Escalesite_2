@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,8 +24,7 @@ import { FullWidhtBannerComponent } from './componentList/full-widht-banner/full
 import { BlackbirdprojectComponent } from './layouts/blackbirdproject/blackbirdproject.component';
 import { MomentumprojectComponent } from './layouts/momentumproject/momentumproject.component';
 import { ErrorpageComponent } from './layouts/errorpage/errorpage.component';
-
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -48,7 +47,7 @@ import { ErrorpageComponent } from './layouts/errorpage/errorpage.component';
     FullWidhtBannerComponent,
     BlackbirdprojectComponent,
     MomentumprojectComponent,
-    ErrorpageComponent
+    ErrorpageComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,9 +55,12 @@ import { ErrorpageComponent } from './layouts/errorpage/errorpage.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
+    MatProgressSpinnerModule,
 
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
