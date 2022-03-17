@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../form/user-form'
 import { MessageService } from './message.service';
 import { Router } from '@angular/router';
-import { Subject } from 'rxjs';
+
+
 
 @Component({
   selector: 'app-form',
@@ -22,7 +23,7 @@ export class FormComponent implements OnInit {
   isChecked = false;
   public requestError = '';
   succsessMsg = '';
-  
+  loading = false;
 
   ngOnInit(): void {
 
@@ -35,23 +36,28 @@ export class FormComponent implements OnInit {
     this.isChecked = true;
     console.log(this.isChecked)
   }
-  
-  
+
+
   onSubmit() { 
     this.submitted = true;
-    this._messageService.send(this.model)
-    .subscribe(
-      data => {
-        this.succsessMsg = data;
-        console.log('Success', this.succsessMsg);
-      },
-      error => {
-        this.requestError = error;
-        console.log('Eror', this.requestError);
-      }
-    )
-  }
+    this.loading = true;
+    setTimeout(()=>{
+      this._messageService.send(this.model)
+      .subscribe(
+        data => {
+          this.succsessMsg = data;
+          console.log('Success', this.succsessMsg);
+        },
+        error => {
+          this.requestError = error;
+          console.log('Eror', this.requestError);
+        }
+      ),
+      this.loading = false;
+    }, 2000);
 
+  }
+  
   // Form System Fail Button Component
   buttonText = 'Reload Form';
   functionCall(event) {

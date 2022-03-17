@@ -1,4 +1,5 @@
 <!-- Global Navigation-->
+<div id="navigation">
 <div id="GlobalNav">
   <div class="NavLogo">
     <p>EscaleSite </p>
@@ -10,7 +11,10 @@
       <p><a routerLink="/contact-us" routerLinkActive="active-link">Contact</a></p>
   </div>
 </div>
-
+<div *ngIf="_loaderService.isLoading | async" id="loaderContainer">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+</div>
 <!-- End Global Navigation-->
 
 <!-- Globak Navigation Mobil -->

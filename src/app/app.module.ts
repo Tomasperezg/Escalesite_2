@@ -25,6 +25,8 @@ import { BlackbirdprojectComponent } from './layouts/blackbirdproject/blackbirdp
 import { MomentumprojectComponent } from './layouts/momentumproject/momentumproject.component';
 import { ErrorpageComponent } from './layouts/errorpage/errorpage.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { InterceptorService } from './loader/interceptor.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     FullWidhtBannerComponent,
     BlackbirdprojectComponent,
     MomentumprojectComponent,
-    ErrorpageComponent,
+    ErrorpageComponent
   ],
   imports: [
     BrowserModule,
@@ -57,9 +59,11 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     FormsModule,
     HttpClientModule,
     MatProgressSpinnerModule,
+    MatProgressBarModule
 
   ],
   providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}
   ],
   bootstrap: [AppComponent]
 })

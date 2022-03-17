@@ -1,8 +1,7 @@
 
 <div id="formOuterContainer">
     <div *ngIf="!submitted" class="formInterContainer">
-        <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="formContent">
-                
+        <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="formContent">    
             <!-- Name -->
             <label for="name">Full Name*: </label>
             <input type="text" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel">
@@ -53,6 +52,13 @@
                 
         </form>
 
+    </div>
+    <!-- Loading Screen-->
+    <div class="formSubmittedContainer" *ngIf="loading">
+            <div class="spinnerContainer">
+                <mat-progress-spinner mode="indeterminate" color="accent">
+                </mat-progress-spinner>
+            </div>
     </div>
     <!-- Succeful Message -->
     <div class="formSubmittedContainer" *ngIf="submitted && succsessMsg">

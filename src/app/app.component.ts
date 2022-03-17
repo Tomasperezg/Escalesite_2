@@ -3,6 +3,7 @@ import { openCloseAnimation } from './animations/open-close'
 import { mobilMenuIconChange } from './animations/mobil-menu-icon'
 import { slideInAnimation } from './animations/router-animation';
 import { RouterOutlet } from '@angular/router';
+import { LoaderService } from './loader/loader.service';
 
 
 @Component({
@@ -17,6 +18,9 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'Escalesite';
 
+  constructor( public _loaderService: LoaderService){
+
+  }
 
   // Nav Controller
   slideInState = false;

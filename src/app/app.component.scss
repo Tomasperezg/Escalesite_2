@@ -1,10 +1,18 @@
 @import "src/styles";
-
 #GlobalNavMobil{
     display: none;
 }
+#navigation{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    max-width: 1100px;
+    top: 0;
+    z-index: 99;
 
 #GlobalNav{
+    
     display: flex;
     justify-content: space-between;
     position: -webkit-sticky; /* Safari */
@@ -13,7 +21,7 @@
     background-color: white;
     -webkit-box-shadow: 0 8px 6px -6px #0000005e;
 	   -moz-box-shadow: 0 8px 6px -6px #0000005e;
-	        box-shadow: 0 8px 6px -6px #0000005e;
+            box-shadow: 0 8px 6px -6px #0000005e;
     .NavLogo{
         color: $primary-font-color;
         padding-left: 20px;
@@ -60,6 +68,13 @@
        
 
     }
+}
+#loaderContainer{
+    position: relative;
+    z-index: 99;
+    width: 100%;
+
+}
 }
 #pageBodyComponents{
     min-height: 1000px;
